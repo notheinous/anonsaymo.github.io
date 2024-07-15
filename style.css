@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEFF6;
+    font-family: Poppins;
+    text-decoration: none;
+}
+
+
+.off-screen-menu {
+    background-color: #EEEFF6;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    box-shadow: 2px 0px 10px #888888;
+
+}
+
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    display: flex;
+    background-color: #EEEFF6;
+    box-shadow: 2px 0px 10px #888888;
+
+}
+
+.logomark {
+    margin: 1em;
+    font-size: 2vw;
+    color: #25196A;
+}
+
+.anon {
+    font-weight: 600;
+}
+
+.say {
+    font-weight: 400;
+}
+
+.mo {
+    font-weight: 400;
+}
+
+
+ul {
+    list-style-type: none;
+    font-size: 2vw;
+  }
+  
+  li + li {
+    margin-top: 40px;
+  }
+
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 4vw;
+    width: 3vw;
+    margin: auto;
+    position: absolute;
+    top: 1em;
+    left: 95%;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+li { 
+    text-decoration: none;
+    color:#000000; 
+  }
+  li:hover { 
+    text-decoration: none;
+    color:#25196A; 
+  }
+
+/* content */
+
+.greeting-text {
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 3.5vw;
+    line-height: 5.5vw;
+    
+}
+
+.you {
+    font-weight: 400;
+    font-size: 7vw;
+}
+
+.deserve {
+    font-weight: 400;
+    font-size: 7vw;  
+}
+
+.to-be {
+    font-weight: 400;
+    font-size: 7vw;
+}
+
+
+.heard {
+    font-weight: 900;
+    font-size: 7vw;
+}
+
+.greeting-subtext {
+    font-size: 1.6vw;
+}
+
+.button {
+    background-color: #25196A; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 0.5em;
+    font-family: Poppins;
+    width: 400px;
+    border-radius: 18px;
+  }
+
+  .button:hover {
+    border: 3px;
+    border-color: #222124;
+    background-color: #7f8180; /* Green */
+    color: white;
+    transition: .3s ease-in;
+  }
